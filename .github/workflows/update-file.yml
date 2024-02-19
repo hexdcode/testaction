@@ -2,7 +2,7 @@ name: Update File
 
 on:
   schedule:
-    - cron: '55 * * * *' # 每天 UTC 时间 00:00 运行
+    - cron: '0 * * * *' # 每天 UTC 时间 00:00 运行
 
 jobs:
   update-file:
@@ -12,7 +12,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.x'
+        python-version: '3.9'
     - name: Run script
       run: python action.py # 执行你的脚本
     - name: Commit and push if changed
