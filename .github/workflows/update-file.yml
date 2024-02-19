@@ -2,7 +2,7 @@ name: Update File
 
 on:
   schedule:
-    - cron: '1 * * * *' # 每天 UTC 时间 00:00 运行
+    - cron: '32 * * * *' # 每天 UTC 时间 00:00 运行
 
 jobs:
   update-file:
